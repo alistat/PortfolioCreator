@@ -9,6 +9,17 @@ module.exports = {
 
   attributes: {
 
+    name:{
+      type: "String",
+      required: true
+    },
+
+    elements:{
+      collection: "ContentElement",
+      via: "myPages",
+      dominant: true
+    }
+
   }
 };
 
