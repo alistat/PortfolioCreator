@@ -15,6 +15,10 @@ module.exports = {
       unique: true
     },
 
+    renderFunction: {
+      type: "String"
+    },
+
     description:{
       type: "String",
       defaultsTo: 'No Description added.'
