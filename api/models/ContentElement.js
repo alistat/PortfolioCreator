@@ -44,8 +44,19 @@ module.exports = {
     myPages:{
       collection: "Page",
       via: "elements"
-    }
+    },
 
+    /**
+     * Returns a query that returns the child element in order of index.
+     * The query is not executed so it must be executed explicitly by calling then() or exec().
+     */
+    children: function() {
+      return ContentElement.find()
+        .where({parent: this.id})
+        .sort('index');
+    }
   }
+
+
 };
 
