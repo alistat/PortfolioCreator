@@ -14,7 +14,7 @@ module.exports = {
       required: true
     },
 
-    ctype:{
+    type:{
       model: "ContentType",
       required: true
     },
