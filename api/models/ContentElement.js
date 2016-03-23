@@ -37,7 +37,8 @@ module.exports = {
     index:{
       type: "int",
       required: true,
-      defaultsTo: 0
+      defaultsTo: 0,
+      index: true
     },
 
     myPages:{
