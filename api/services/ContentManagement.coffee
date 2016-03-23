@@ -10,3 +10,6 @@ registerContentType = (name, renderFunctionExpr, description="") ->
       else
         ContentType.create {name: name, description: description, renderFunction: renderFunctionExpr}
           .then (val) -> val # identity function just to call exec and return promise
+
+module.exports =
+  registerContentType: registerContentType
